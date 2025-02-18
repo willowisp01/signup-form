@@ -26,7 +26,10 @@ body {
 
 body {
   display: flex;
+  background-color: #f3f3eb;
 }
+
+/* Left Sidebar */
 
 .sidebar {
   flex: 1;
@@ -49,6 +52,7 @@ body {
   font-family: 'Grandstander', 'Sans Serif';
 }
 
+/* Main Content (right of page) */
 .content {
   flex: 3;
   margin: 10vh 0;
@@ -58,20 +62,22 @@ body {
   padding-left: var(--left-spacing);
 }
 
+/* Intro Paragraph */
+
 .content-text {
   padding-top: 20px;
   height: 20%;
-  background-color: aliceblue;
 }
 
 .content-text p {
   max-width: 80%;
 }
 
+/* Form Section */
+
 .form {
   height: 50%;
-  background-color: aqua;
-  /* padding: 100px; */
+  background-color: #9191bd;
 }
 
 .form>p {
@@ -80,24 +86,18 @@ body {
   font-family: 'Grandstander', 'Sans Serif';
 }
 
-.account {
-  height: 30%;
-  background-color: aquamarine;
-}
-
 .field {
   display: inline-block;
   margin: 10px 40px 10px 0px;
 }
 
 input {
-  border-color: #E5E7EB;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 input:focus {
-  border-color: blue;
-  box-shadow: 4px 2px 2px rgba(240, 240, 240, 0.5);
+  border-color: #ba6444;
+  box-shadow: 4px 2px 2px #5f5f91;
   outline: none;
 }
 
@@ -105,7 +105,19 @@ input:user-invalid {
   border-color: red;
 }
 
+.disclaimer {
+  color: rgb(36, 36, 36);
+  font-size: 0.85rem;
+}
+
+/* Create Account Section */
+
+.account {
+  height: 30%;
+}
+
 .account>button {
+  background-color: #c9795c;
   font-size: 1.3rem;
   font-family: 'Grandstander', 'Sans Serif';
   padding: 5px 5px;
