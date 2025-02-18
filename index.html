@@ -11,8 +11,8 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-    <title>Sign Up</title>
-  </head>
+  <title>Sign Up</title>
+</head>
 
 <body>
   <div class="sidebar">
@@ -23,30 +23,45 @@
 
   <div class="content">
     <div class="content-text">
-      <p>Love cats? Make a difference! Join our animal welfare service and help give rescued cats the care, love, and second chances they deserve. Whether it’s feeding, fostering, or advocating, your efforts change lives—both theirs and yours. Volunteer today and be a hero for our feline friends! 🐾💕</p>
+      <p>Love cats? Make a difference! Join our animal welfare service and help give rescued cats the care, love, and
+        second chances they deserve. Whether it’s feeding, fostering, or advocating, your efforts change lives—both
+        theirs and yours. Volunteer today and be a hero for our feline friends! 🐾💕</p>
     </div>
-    <form action="">
+
+    <div class="form">
       <p>Sign Up Now!</p>
-      <label for="first_name">First Name</label>
-      <input type="text" name="first_name" id="first_name">
-
-      <label for="last_name">Last Name</label>
-      <input type="text" name="last_name" id="last_name">
-
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email">
-
-      <label for="hp">Phone Number</label>
-      <input type="tel" name="hp" id="hp">
-
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password">
-
-      <label for="password">Confirm Password</label>
-      <input type="password" name="password" id="password">
-    </form>
+      <form action="" id="signup-form">
+        <div class="field">
+          <label for="first_name">First Name</label>
+          <p><input type="text" name="first_name" id="first_name" placeholder="John"></p>
+        </div>
+        <div class="field">
+          <label for="last_name">Last Name</label>
+          <p><input type="text" name="last_name" id="last_name" placeholder="Volunteering"></p>
+        </div>
+        <br>
+        <div class="field">
+          <label for="email">Email</label>
+          <p><input type="email" name="email" id="email" placeholder="volunteer@gmail.com"></p>
+        </div>
+      
+        <div class="field">
+          <label for="hp">Phone Number</label>
+          <p><input type="tel" name="hp" id="hp" required></p>
+        </div>
+        <br>
+        <div class="field">
+          <label for="password">Password</label>
+          <p><input type="password" name="password" id="password" minlength="6" maxlength="20"></p>
+        </div>
+        <div class="field">
+          <label for="password">Confirm Password</label>
+          <p><input type="password" name="password" id="password" minlength="6" maxlength="20"></p>
+        </div>
+      </form>
+    </div>
     <div class="account">
-      <button type="submit">
+      <button type="submit" form="signup-form">
         Create Account
       </button>
       <p>
